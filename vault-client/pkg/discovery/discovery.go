@@ -118,7 +118,6 @@ func GetEnviroment(enviroment string) []string {
 }
 
 func Run(ris string, servicename string, replace bool, env string) {
-	fmt.Printf("PROJECT_NAME=%s\n", types.PROJECT_NAME)
 	envAllowed := GetEnviroment(env)
 	data := common.FindFilesByName("./helm", "values.yaml")
 	for environment, file := range data {

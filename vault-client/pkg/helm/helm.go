@@ -41,6 +41,7 @@ func CheckFiles(filePath string, raw bool) {
 			variable := result[0][1]
 			path := result[0][3]
 			key := result[0][5]
+			fmt.Println(types.PROJECT_NAME, path)
 			vaultPath = fmt.Sprintf("%s/data/%s", types.PROJECT_NAME, path)
 			
 			if cache[path] != nil {
